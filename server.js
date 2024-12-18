@@ -6,8 +6,8 @@ const app = express();
 const port = 3000;
 
 // Token del bot y tu ID de chat
-const botToken = "7768024145:AAG0JBunDMPaTgB3s7aftsR6fIUyW5gQ_tg";
-const chatId = "5635061204";
+const botToken = process.env.BOT_TOKEN;
+const chatId = process.env.CHAT_ID;
 
 // Middleware para procesar datos JSON
 app.use(bodyParser.json());
